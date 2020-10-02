@@ -151,8 +151,8 @@ if(NOT DEFINED ${extProjName}_DIR AND NOT ${USE_SYSTEM_${extProjName}})
   ### --- End Project specific additions
   set(${proj}_REPOSITORY ${git_protocol}://github.com/InsightSoftwareConsortium/ITK.git)
   # set(${proj}_REPOSITORY ${git_protocol}://github.com/stnava/ITK.git)
-  set(${proj}_GIT_TAG  1e708db2f586997e408cfdc2cea5114ae5575892)  # Update for NIFTI sform changes
-  set(ITK_VERSION_ID ITK-5.1) ### NOTE: When updating GIT_TAG, also update ITK_VERSION_ID
+  set(${proj}_GIT_TAG  3ecf6c87d18d51b124589d5a74389244d692109c)  # Update for NIFTI sform changes
+  set(ITK_VERSION_ID ITK-5.1.1) ### NOTE: When updating GIT_TAG, also update ITK_VERSION_ID
 
   ExternalProject_Add(${proj}
     GIT_REPOSITORY ${${proj}_REPOSITORY}
